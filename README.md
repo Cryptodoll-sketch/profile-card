@@ -7,7 +7,7 @@ It demonstrates semantic HTML, CSS Grid layout, and dynamic JavaScript updates.
 
 ## 🚀 Live Demo
 
-👉 Live Site: YOUR_LIVE_URL
+👉 Live Site: https://profile-card-ola.netlify.app
 
 ---
 
