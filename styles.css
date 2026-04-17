@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #f5f3ff, #ede9fe, #f8fafc);
+  padding: 20px;
+}
+
+.card {
+  max-width: 900px;
+  margin: auto;
+
+  background: rgba(255,255,255,0.9);
+  border-radius: 20px;
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.left {
+  grid-area: avatar;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.avatar img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  border: 3px solid #7c3aed;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.bio {
+  color: #374151;
+  line-height: 1.6;
+}
+
+h3 {
+  margin-bottom: 6px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.socials ul {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0 0;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.socials a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 8px 12px;
+  border-radius: 10px;
+
+  background: rgba(124, 58, 237, 0.08);
+  color: #7c3aed;
+
+  text-decoration: none;
+}
+
+.time-wrapper {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+/* RESPONSIVENESS */
+
+@media (min-width: 768px) {
+
+  .card {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+
+    grid-template-areas:
+      "avatar name"
+      "avatar bio"
+      "avatar hobbies"
+      "avatar dislikes"
+      "avatar socials"
+      "avatar time";
+
+    column-gap: 28px;
+    row-gap: 14px;
+    align-items: start;
+  }
+
+  .avatar {
+    grid-area: avatar;
+  }
+
+  #upload {
+    grid-area: upload;
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  header {
+    grid-area: name;
+  }
+
+  .bio {
+    grid-area: bio;
+  }
+
+  .hobbies {
+    grid-area: hobbies;
+  }
+
+  .dislikes {
+    grid-area: dislikes;
+  }
+
+  .socials {
+    grid-area: socials;
+  }
+
+  .time-wrapper {
+    grid-area: time;
+    align-self: end;
+  }
+}

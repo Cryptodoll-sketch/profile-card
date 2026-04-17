@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Profile Card</title>
+
+             <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+             <!-- Remix Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+
+<article data-testid="test-profile-card" class="card">
+
+             <!-- Avatar -->
+   <div class="left">
+  <figure class="avatar">
+    <img
+      id="avatar"
+      src="images/Savagehorlamide.jpeg"
+      alt="User avatar"
+      data-testid="test-user-avatar"
+    />
+  </figure>
+
+             <!-- Upload -->
+   <label for="upload">Upload Profile photo</label>
+  <input
+    type="file"
+    id="upload"
+    accept="image/*"
+    aria-label="Upload profile image"
+  />
+   </div>
+
+  <!-- Name -->
+  <header>
+    <h2 data-testid="test-user-name">Olamide Tobun</h2>
+  </header>
+
+             <!-- Bio -->
+  <p data-testid="test-user-bio" class="bio">
+    Frontend developer focused on building responsive, accessible, and high-performance web experiences.
+  </p>
+
+             <!-- Hobbies -->
+  <section class="hobbies">
+    <h3>Hobbies</h3>
+    <ul data-testid="test-user-hobbies">
+      <li>Crotcheting</li>
+      <li>Reading books</li>
+      <li>Gaming</li>
+    </ul>
+  </section>
+
+             <!-- Dislikes -->
+  <section class="dislikes">
+    <h3>Dislikes</h3>
+    <ul data-testid="test-user-dislikes">
+      <li>Noise</li>
+      <li>Unclear project requirements</li>
+    </ul>
+  </section>
+
+             <!-- Socials -->
+  <nav data-testid="test-user-social-links" class="socials">
+    <ul>
+      <li>
+        <a href="https://github.com/Cryptodoll-sketch"
+           target="_blank"
+           rel="noopener noreferrer"
+           data-testid="test-user-social-github">
+          <i class="ri-github-fill"></i> GitHub
+        </a>
+      </li>
+
+      <li>
+        <a href="https://www.linkedin.com/in/olamide-tobun-9491872a8/"
+           target="_blank"
+           rel="noopener noreferrer"
+           data-testid="test-user-social-linkedin">
+          <i class="ri-linkedin-box-fill"></i> LinkedIn
+        </a>
+      </li>
+
+      <li>
+        <a href="https://twitter.com/ola_the_dev"
+           target="_blank"
+           rel="noopener noreferrer"
+           data-testid="test-user-social-twitter">
+          <i class="ri-twitter-x-fill"></i> Twitter
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+             <!-- Time -->
+  <p class="time-wrapper">
+    Current Time (ms):
+    <span id="time" data-testid="test-user-time" aria-live="polite"></span>
+  </p>
+
+</article>
+
+<script src="script.js"></script>
+</body>
+</html>
