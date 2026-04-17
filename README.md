@@ -137,7 +137,7 @@ Frontend Developer
 
 ## 📌 Notes
 
-- Ensure images are stored in /images folder
-- Screenshots must be placed in /screenshots folder
+- Ensure images are stored in images/ folder
+- Screenshots must be placed in screenshots/ folder
 - Use a live server for best experience
 - All test IDs are required for validation
