@@ -48,29 +48,30 @@ It demonstrates semantic HTML, CSS Grid layout, and dynamic JavaScript updates.
 - Vanilla JavaScript
 
 ---
+### 📁 Project Structure
 
-## 📦 Project Structure
-
+```bash
 1B(profile-card)/
-│
 ├── index.html
 ├── styles.css
 ├── script.js
 ├── images/
 │   └── Savagehorlamide.jpg
-└── screenshots/
-    ├── mobile.png
-    └── desktop.png
+├── screenshots/
+│   ├── mobile.png
+│   ├── tablet.png
+│   └── desktop.png
+```
 
 ---
 
 ## 🖥️ How to Run Locally
 
 ### 1. Clone repository
-git clone YOUR_GITHUB_REPO
+git clone  https://github.com/Cryptodoll-sketch/profile-card
 
 ### 2. Navigate into project
-cd project-folder
+cd profile-card
 
 ### 3. Open in browser
 - Double click index.html  
